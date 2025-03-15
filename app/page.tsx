@@ -1,42 +1,35 @@
 import Image from "next/image";
 import Link from "next/link";
+import Header from "./components/header";
 
 export default function Home() {
   return (
     <div>
-      <header>
-        <h1>nativ</h1>
+      <Header />
 
-        <nav>
-          <Link href="#home">Home</Link>
-          <Link href="#about">Sobre</Link>
-          <Link href="#projects">Projetos</Link>
-        </nav>
-      </header>
-
-      <main>
-        <section id="home">
-          <h2>
-            Eleve seu negócio digital a outro nível
-            <span>
-              com um Front-end de qualidade!com um Front-end de qualidade!
+      <main className="px-6 mb-20">
+        <section id="home" className="pt-40">
+          <h2 className="text-4xl font-bold mb-6">
+            Eleve seu negócio digital a outro nível{" "}
+            <span className="text-[#ecb365]">
+              com um Front-end de qualidade!
             </span>
           </h2>
 
-          <p>
+          <p className="text-xl">
             Olá! Sou Vagner Junior, desenvolvedor Front-end com especialidade em
             React, HTML e CSS. Ajudo pequenos negócios e designers a colocarem
             em prática boas ideias. Vamos conversar?
           </p>
         </section>
 
-        <section id="about">
-          <h2>
-            Sou Vagner <span>Jr!</span>
+        <section id="about" className="pt-20">
+          <h2 className="text-4xl font-bold mb-6">
+            Sou Vagner <span className="text-[#ecb365]">Jr!</span>
           </h2>
 
-          <div>
-            <p>
+          <div className="mb-3">
+            <p className="mb-3">
               Sou um desenvolvedor em formação apaixonado por tecnologia e
               inovação. Estou me especializando em
               <span>React, JavaScript, HTML e CSS</span>
@@ -56,7 +49,7 @@ export default function Home() {
           </div>
 
           <Image
-            className="w-10"
+            className="rounded-2xl w-full h-80 object-cover"
             src={"/me.jpg"}
             alt="imagem de perfil do gituhb de Vagner"
             width={1000}
@@ -64,44 +57,59 @@ export default function Home() {
           />
         </section>
 
-        <section id="projects">
-          <h2>Projetos</h2>
+        <section id="projects" className="pt-20">
+          <h2 className="text-4xl font-bold mb-6">
+            {" "}
+            Meus <span className="text-[#ecb365]">projetos</span>.
+          </h2>
 
-          <article>
-            <Link href={""}>
+          <article className="flex flex-col gap-3">
+            <div className="p-6 rounded-2xl bg-[#04293a]">
               <Image
-                className="w-10"
+                className="rounded-2xl w-full h-40 object-cover "
                 src={"/me.jpg"}
                 alt="imagem previwe do projeto xxx"
                 width={1000}
                 height={1000}
               />
 
-              <div>
-                <h3>Nome do projeto</h3>
-                <p>descrição do projeto</p>
+              <div className="mt-3 text-[#efefef]">
+                <h3 className="text-xl font-bold">Timer</h3>
+                <p className="mb-3">
+                  Timer é um relógio pomodoro em contagem regressiva .
+                </p>
+                <Link href={""} className="hover:cursor-pointer">
+                  Acesse o app aqui...
+                </Link>
               </div>
-            </Link>
+            </div>
 
-            <Link href={""}>
+            <div className="p-6 rounded-2xl bg-[#04293a]">
               <Image
-                className="w-10"
+                className="rounded-2xl w-full h-40 object-cover "
                 src={"/me.jpg"}
                 alt="imagem previwe do projeto xxx"
                 width={1000}
                 height={1000}
               />
 
-              <div>
-                <h3>Nome do projeto</h3>
-                <p>descrição do projeto</p>
+              <div className="mt-3 text-[#efefef]">
+                <h3 className="text-xl font-bold">Timer</h3>
+                <p className="mb-3">
+                  Timer é um relógio pomodoro em contagem regressiva .
+                </p>
+                <Link href={""} className="hover:cursor-pointer">
+                  Acesse o app aqui...
+                </Link>
               </div>
-            </Link>
+            </div>
           </article>
         </section>
       </main>
 
-      <footer>Copyright (c) 2025 Vagner Junior</footer>
+      <footer className="w-full h-40 flex items-center justify-center text-[#efefef] bg-[#04293a]">
+        Copyright (c) 2025 Vagner Natividade
+      </footer>
     </div>
   );
 }
