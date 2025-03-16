@@ -11,3 +11,13 @@ body * {
 body {
   background: #efefef;
 }
+
+p {
+  letter-spacing: 0.025em;
+}
+
+@media (min-width: 768px) {
+  p {
+    font-size: 1.25rem;
+  }
+}
