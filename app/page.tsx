@@ -1,8 +1,6 @@
 import Image from "next/image";
-import Link from "next/link";
 import Header from "./components/header";
-import { FaReact, FaCss3 } from "react-icons/fa";
-import { TbBrandTypescript } from "react-icons/tb";
+import Card from "./components/card";
 
 export default function Home() {
   return (
@@ -63,72 +61,20 @@ export default function Home() {
 
         <section id="projects" className="pt-20">
           <h2 className="text-4xl font-bold mb-6 md:text-5xl">
-            {" "}
             Meus <span className="text-[#ecb365]">projetos</span>.
           </h2>
 
           <article className="flex flex-col gap-3 md:grid md:grid-cols-2 ">
-            <div className=" p-6 rounded-2xl bg-[#efefef] shadow-2xl  ">
-              <Image
-                className="rounded-2xl w-full h-40 object-cover aspect-video"
-                src={"/time_preview.png"}
-                alt="imagem previwe do projeto xxx"
-                width={1000}
-                height={1000}
-              />
-
-              <div className="mt-3">
-                <h3 className="text-xl md:text-2xl font-bold">Timer</h3>
-                <p className="mb-3">
-                  Timer é um relógio pomodoro em contagem regressiva .
-                </p>
-                <Link href={""} className="hover:cursor-pointer md:text-xl ">
-                  Acesse o app aqui...
-                </Link>
-              </div>
-
-              <ul className="flex gap-3 mt-6 text-[#064663] text-3xl">
-                <li>
-                  <FaReact />
-                </li>
-                <li>
-                  <TbBrandTypescript />
-                </li>
-                <li>
-                  <FaCss3 />
-                </li>
-              </ul>
-            </div>
-            <div className=" p-6 rounded-2xl bg-[#efefef] shadow-2xl  ">
-              <Image
-                className="rounded-2xl w-full h-40 object-cover aspect-video"
-                src={"/time_preview.png"}
-                alt="imagem previwe do projeto xxx"
-                width={1000}
-                height={1000}
-              />
-
-              <div className="mt-3">
-                <h3 className="text-xl md:text-2xl font-bold">Timer</h3>
-                <p className="mb-3">
-                  Timer é um relógio pomodoro em contagem regressiva .
-                </p>
-                <Link href={""} className="hover:cursor-pointer md:text-xl ">
-                  Acesse o app aqui...
-                </Link>
-              </div>
-
-              <ul className="flex gap-3 mt-6 text-[#064663] text-3xl">
-                <li>
-                  <FaReact />
-                </li>
-                <li>
-                  <TbBrandTypescript />
-                </li>
-                <li>
-                  <FaCss3 />
-                </li>
-              </ul>
+            <Card
+              name="Timer"
+              image="time_preview.png"
+              link="https://timer-lime-seven.vercel.app/"
+              description="App para contar o tempo como um pomodoro"
+            />
+            <div className="w-full h-40 mt-3 bg-[#efefef] rounded-2xl border-dashed border-zinc-400 border-2 grid place-items-center">
+              <button className="text-zinc-400 text-2xl tracking-widest">
+                new
+              </button>
             </div>
           </article>
         </section>
