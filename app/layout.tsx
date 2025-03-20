@@ -7,6 +7,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
+      <head>
+        <title>nativ</title>
+      </head>
       <body className={`antialiased`}>{children}</body>
     </html>
   );
