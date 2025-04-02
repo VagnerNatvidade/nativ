@@ -67,9 +67,15 @@ export default function Home() {
           <article className="flex flex-col gap-3 md:grid md:grid-cols-2 ">
             <Card
               name="Timer"
-              image="time_preview.png"
+              image="timer_preview.png"
               link="https://timer-lime-seven.vercel.app/"
               description="App para contar o tempo como um pomodoro"
+            />
+            <Card
+              name="Login"
+              image="login_page_preview.png"
+              link="https://login-page-eight-alpha.vercel.app/"
+              description="App desenvolvido para projetar uma página inicial de login"
             />
             <div className="w-full h-40 mt-3 bg-[#efefef] rounded-2xl border-dashed border-zinc-400 border-2 grid place-items-center">
               <button className="text-zinc-400 text-2xl tracking-widest">
