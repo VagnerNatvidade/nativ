@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Header from "./components/header";
 import Card from "./components/card";
+import Footer from "./components/footer";
 
 export default function Home() {
   return (
@@ -86,9 +87,7 @@ export default function Home() {
         </section>
       </main>
 
-      <footer className="w-full h-40 flex items-center justify-center text-[#efefef] bg-[#04293a]">
-        Copyright (c) 2025 Vagner Natividade
-      </footer>
+      <Footer />
     </div>
   );
 }
