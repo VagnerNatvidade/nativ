@@ -7,11 +7,18 @@ const Footer = () => {
       <div className="border-r pr-6">
         <h2>Contatos</h2>
         <nav className="flex flex-col mt-3 ">
-          <Link href={"mailto:vagnerflorindojunior@gmai.com"}>Email</Link>
-          <Link href={"https://www.instagram.com/vagner_natividade/"}>
+          <Link target="_blank" href={"mailto:vagnerflorindojunior@gmai.com"}>
+            Email
+          </Link>
+          <Link
+            target="_blank"
+            href={"https://www.instagram.com/vagner_natividade/"}
+          >
             Instagram
           </Link>
-          <Link href={"https://github.com/VagnerNatvidade/"}>GitHub</Link>
+          <Link target="_blank" href={"https://github.com/VagnerNatvidade/"}>
+            GitHub
+          </Link>
         </nav>
       </div>
       <p>Copyright (c) 2025 Vagner Natividade</p>
